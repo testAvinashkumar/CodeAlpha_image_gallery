@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="nature">Nature</button>
+        <button data-filter="city">City</button>
+        <button data-filter="animals">Animals</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery">
+        <!-- Nature / Mountain Images -->
+        <div class="image-item nature"><img src="https://picsum.photos/id/1015/600/400" alt="Mountain 1"></div>
+        <div class="image-item nature"><img src="https://picsum.photos/id/1016/600/400" alt="Mountain 2"></div>
+        <div class="image-item nature"><img src="https://picsum.photos/id/1020/600/400" alt="Mountain 3"></div>
+        <div class="image-item nature"><img src="https://picsum.photos/id/1043/600/400" alt="Mountain Lake"></div>
+        <div class="image-item nature"><img src="https://picsum.photos/id/1056/600/400" alt="Snowy Peaks"></div>
+
+        <!-- Custom Mountain Images -->
+        <div class="image-item nature"><img src= "IMG-20250627-WA0018.jpg" alt="Mountain 1"></div>
+        <div class="image-item nature"><img src="IMG-20250328-WA0025.jpg" alt="Mountain 2"></div>
+        <div class="image-item nature"><img src="IMG-20250328-WA0019.jpg" alt="Mountain 3"></div>
+
+        <!-- City Images -->
+        <div class="image-item city"><img src="https://picsum.photos/id/1035/600/400" alt="City 1"></div>
+        <div class="image-item city"><img src="https://picsum.photos/id/1040/600/400" alt="City 2"></div>
+        <div class="image-item city"><img src="https://picsum.photos/id/1063/600/400" alt="Skyscrapers"></div>
+
+        <!-- Animals -->
+        <div class="image-item animals"><img src="https://picsum.photos/id/237/600/400" alt="Dog"></div>
+        <div class="image-item animals"><img src="https://picsum.photos/id/219/600/400" alt="Cat"></div>
+        <div class="image-item animals"><img src="https://picsum.photos/id/1024/600/400" alt="Horse"></div>
+    </div>
+
+    <!-- Lightbox View -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+        <button class="prev" onclick="prevImage()">&#10094;</button>
+        <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
